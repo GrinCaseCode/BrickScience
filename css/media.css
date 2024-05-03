@@ -214,14 +214,14 @@
     .item-partner {
         height: 70px;
         padding: 15px;
-        border-width: 1px;
+        border: 1px solid rgba(34, 34, 34, 0.32);
     }
     .slider-partners .slick-slide {
-        border-width: 1px;
+        border: none;
     }
     .slider-partners .slick-list {
-        padding: 0 2px;
-        margin: 0 -2px;
+        padding: 0 1px;
+        margin: 0 -1px;
     }
     .slider-partners {
         padding: 30px 0;
