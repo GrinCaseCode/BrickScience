@@ -1,5 +1,19 @@
 $(document).ready(function() {
 
+	$(".file-input").on("change", function(){
+        var files = $(this)[0].files;
+		var containerImage = $(this).siblings(".preview-container");
+        containerImage.empty();
+        if(files.length > 0){
+            for(var i = 0; i < files.length; i++){
+                var reader = new FileReader();
+                reader.onload = function(e){
+                    $("<div class='preview'><img src='" + e.target.result + "'><button class='delete'>Delete</button></div>").appendTo(containerImage);
+                };
+                reader.readAsDataURL(files[i]);
+            }
+        }
+    });
 
 //прилипающие меню
 var $menu = $(".header");
