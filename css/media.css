@@ -219,6 +219,10 @@
     .slider-partners .slick-slide {
         border-width: 1px;
     }
+    .slider-partners .slick-list {
+        padding: 0 1px;
+        margin: 0 -1px;
+    }
     .slider-partners {
         padding: 30px 0;
     }
