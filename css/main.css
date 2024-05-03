@@ -523,6 +523,9 @@ form {
 .slick-current + .slick-slide .item-partner {
 	border-color: #d15133;
 }
+.slider-partners .slick-list {
+	border: 0.104vw solid rgba(34, 34, 34, 0.32);
+}
 
 .item-partner img {
 	max-width: 100%;
