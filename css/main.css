@@ -511,8 +511,17 @@ form {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 0.104vw solid rgba(34, 34, 34, 0.32);
 	transition: all 0.3s;
+	border: 0.104vw solid transparent;
+}
+.slider-partners .slick-slide {
+	border: 0.104vw solid rgba(34, 34, 34, 0.32);
+}
+.slick-current + .slick-slide {
+	border-color: #d15133;
+}
+.slick-current + .slick-slide .item-partner {
+	border-color: #d15133;
 }
 .item-partner img {
 	max-width: 100%;
@@ -556,10 +565,6 @@ form {
 }
 .slider-partners .slick-prev {
 	right: 3.438vw;
-}
-.slick-current + .slick-slide .item-partner {
-	border-color: #d15133;
-	border-width: 0.208vw;
 }
 .slick-dots {
 	bottom: 0;
