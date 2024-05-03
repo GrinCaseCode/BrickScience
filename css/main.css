@@ -926,3 +926,10 @@ form {
 	font-weight: 300;
 	color: rgba(34, 34, 34, 0.64);
 }
+.slider-partners:not(.slick-initialized) > li:not(:first-child),
+.item-for-archive:not(.slick-initialized) > li:not(:first-child),
+.slider-nav-archive:not(.slick-initialized) > li:not(:first-child),
+.slider-for-program:not(.slick-initialized) > li:not(:first-child),
+.slider-nav-program:not(.slick-initialized) > li:not(:first-child) {
+	display: none;
+}
