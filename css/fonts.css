@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Stolzl';
+    src: local('Stolzl Book'), local('Stolzl-Book'),
+        url('../fonts/Stolzl-Book.woff2') format('woff2'),
+        url('../fonts/Stolzl-Book.woff') format('woff'),
+        url('../fonts/Stolzl-Book.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Stolzl';
+    src: local('Stolzl Regular'), local('Stolzl-Regular'),
+        url('../fonts/Stolzl-Regular.woff2') format('woff2'),
+        url('../fonts/Stolzl-Regular.woff') format('woff'),
+        url('../fonts/Stolzl-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Stolzl';
+    src: local('Stolzl Medium'), local('Stolzl-Medium'),
+        url('../fonts/Stolzl-Medium.woff2') format('woff2'),
+        url('../fonts/Stolzl-Medium.woff') format('woff'),
+        url('../fonts/Stolzl-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Stolzl';
+    src: local('Stolzl Bold'), local('Stolzl-Bold'),
+        url('../fonts/Stolzl-Bold.woff2') format('woff2'),
+        url('../fonts/Stolzl-Bold.woff') format('woff'),
+        url('../fonts/sStolzl-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Oktyabrina script';
+    src: local('Oktyabrina-script'), local('Oktyabrina-script'),
+        url('../fonts/Oktyabrina-script.woff2') format('woff2'),
+        url('../fonts/Oktyabrina-script.woff') format('woff'),
+        url('../fonts/Oktyabrina-script.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Furore';
+    src: local('Furore Regular'), local('Furore-Regular'),
+        url('../fonts/Furore.woff2') format('woff2'),
+        url('../fonts/Furore.woff') format('woff'),
+        url('../fonts/Furore.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Noah';
+    src: local('Noah Regular'), local('Noah-Regular'),
+        url('../fonts/Noah-Regular.woff2') format('woff2'),
+        url('../fonts/Noah-Regular.woff') format('woff'),
+        url('../fonts/Noah-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Noah';
+    src: local('Noah Medium'), local('Noah-Medium'),
+        url('../fonts/Noah-Medium.woff2') format('woff2'),
+        url('../fonts/Noah-Medium.woff') format('woff'),
+        url('../fonts/Noah-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
