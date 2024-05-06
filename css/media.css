@@ -398,6 +398,111 @@
     .page-archive .title-section {
         margin-bottom: 5px;
     }
+    .application .title-main {
+        margin: 20px 0;
+    }
+    .item-form {
+        margin-bottom: 15px;
+    }
+    .item-form .jq-selectbox__select-text, .item-form input, .item-form textarea {
+        height: 50px;
+        font-size: 14px;
+        border-radius: 6px;
+        padding: 0 15px;
+    }
+    .application .title-section {
+        margin-bottom: 5px;
+    }
+    .btn-page {
+        height: 50px;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+    .row.row_application > div {
+        padding: 0 15px;
+    }
+    .row.row_application {
+        margin: 0 -15px;
+    }
+    .radio, .checkbox {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .radio label > span, .checkbox label > span {
+        padding-left: 30px;
+    }
+    .radio label > span::after, .checkbox label > span:after,
+    .radio label > span::before, .checkbox label > span:before {
+        width: 19px;
+        height: 19px;
+        top: 0;
+        font-size: 12px;
+    }
+    .upload-main__title {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    .preview-container {
+        height: 300px;
+        border-radius: 16px;
+    }
+    .preview-container__image img,
+    .preview-container__image {
+        border-radius: 16px;
+    }
+    .upload-main {
+        margin-bottom: 15px;
+    }
+    .preview-container__button {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+    .preview-container__title {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+    .wrap-radios .radio {
+        margin-right: 0;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+    .wrap-radios {
+        display: block;
+    }
+    .descr-min {
+        margin-top: 12px;
+        margin-bottom: 15px;
+    }
+    .quantity {
+        height: 50px;
+        margin-bottom: 15px;
+        border-radius: 6px;
+    }
+    .quantity__placeholder {
+        font-size: 14px;
+    }
+    .quantity-button {
+        font-size: 18px;
+    }
+    .quantity input {
+        font-size: 14px;
+    }
+    .item-form__icon {
+        width: 20px;
+        height: 20px;
+        right: 15px;
+    }
+    .row.row_application .row:not(.row_application) > div {
+        padding: 0 4px;
+    }
+    .row.row_application .row:not(.row_application) {
+        margin: 0 -4px;
+    }
+    .application {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
 }
 
 

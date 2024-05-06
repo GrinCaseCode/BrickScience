@@ -2,17 +2,19 @@ $(document).ready(function() {
 
 	$(".file-input").on("change", function(){
         var files = $(this)[0].files;
-		var containerImage = $(this).siblings(".preview-container");
-        containerImage.empty();
+		var containerImage = $(this).parent(".preview-container");
         if(files.length > 0){
             for(var i = 0; i < files.length; i++){
+				$(this).parents(".upload-main").addClass("uploaded");
                 var reader = new FileReader();
                 reader.onload = function(e){
-                    $("<div class='preview'><img src='" + e.target.result + "'><button class='delete'>Delete</button></div>").appendTo(containerImage);
+                    $("<div class='preview-container__image'><img src='" + e.target.result + "'>").appendTo(containerImage);
                 };
                 reader.readAsDataURL(files[i]);
             }
-        }
+        } else {
+			$(this).parents(".upload-main").removeClass("uploaded");
+		}
     });
 
 //прилипающие меню
@@ -157,6 +159,55 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			}
 		}
 		]
+	});
+
+	if ($('#time-picker').length > 0) {
+		const elem = document.getElementById('time-picker');
+		const rangepicker = new DateRangePicker(elem, {
+			format: 'dd/mm/yyyy',
+			language: 'ru',
+			autohide: false
+		}); 
+	}
+
+	jQuery('.quantity').each(function() {
+		var spinner = jQuery(this),
+		input = spinner.find('input[type="number"]'),
+		btnUp = spinner.find('.quantity-up'),
+		btnDown = spinner.find('.quantity-down'),
+		min = input.attr('min'),
+		max = input.attr('max');
+		btnUp.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue >= max) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue + 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+			if (input.val() >= 1) {
+				spinner.addClass("selected");
+			} else {
+				spinner.removeClass("selected");
+			}
+		});
+
+		btnDown.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue <= min) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue - 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+			if (input.val() >= 1) {
+				spinner.addClass("selected");
+			} else {
+				spinner.removeClass("selected");
+			}
+		});
 	});
 
 	$(".input-phone").mask("+7 (999) 999-99-99");
