@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="libs/vanillajs-datepicker-master/dist/css/datepicker.min.css">
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.4" />
+	<link rel="stylesheet" href="css/media.css?ver=1.4" />
+</head>
+<body>
+
+	<div class="wrapper wrapper_page">
+
+		<header class="header default">
+			<div class="container">
+				<div class="header__wrapper">
+					<a href="#" class="logo">
+						<img src="img/logo.svg" alt="alt">
+					</a>
+					<ul class="menu">
+						<li><a href="#">Програма</a></li>
+						<li><a href="#">Спикеры</a></li>
+						<li><a href="#">Партнеры</a></li>
+						<li><a href="#">О коференции</a></li>
+						<li class="active"><a href="#">Архив</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<ul class="list-languages">
+						<li class="active"><a href="#">ru</a></li>
+						<li><a href="#">en</a></li>
+						<li><a href="#">kz</a></li>
+					</ul>
+					<span class='sandwich'>
+						<span class='sw-topper'></span>
+						<span class='sw-bottom'></span>
+						<span class='sw-footer'></span>
+					</span>
+				</div>
+			</div>
+			<div class="menu-mobile">
+				<ul class="menu">
+					<li><a href="#">Програма</a></li>
+					<li><a href="#">Спикеры</a></li>
+					<li><a href="#">Партнеры</a></li>
+					<li><a href="#">О коференции</a></li>
+					<li class="active"><a href="#">Архив</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<ul class="list-languages">
+					<li class="active"><a href="#">ru</a></li>
+					<li><a href="#">en</a></li>
+					<li><a href="#">kz</a></li>
+				</ul>
+			</div>
+			<div class="menu-overlay"></div>
+		</header>
+
+		<section class="application">
+			<div class="container">
+				<h1 class="title-section">заявка на участие</h1>
+				<form>
+					<div class="row row_application">
+						<div class="col-md-6">
+							<div class="title-main">Организация</div>
+							<div class="item-form">
+								<input type="text" placeholder="Наименование организации" required="required">
+							</div>
+							<div class="item-form">
+								<input type="text" placeholder="ИНН организации" required="required">
+							</div>
+							<div class="item-form">
+								<input type="text" placeholder="Адрес организации" required="required">
+							</div>
+							<div class="item-form">
+								<input type="text" placeholder="Номер телефона органиции (ответственного лица)" class="input-phone" required="required">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="title-main">Участники</div>
+							<div class="item-form">
+								<input type="text" placeholder="Ф.И.О. участника" required="required">
+							</div>
+							<div class="item-form">
+								<input type="text" placeholder="Должность" required="required">
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="item-form">
+										<input type="text" placeholder="+7 ХХХ ХХ ХХ" class="input-phone" required="required">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="item-form">
+										<input type="email" placeholder="E-mail" required="required">
+									</div>
+								</div>
+							</div>
+							<button class="btn-page">Добавить участника</button>
+						</div>
+					</div>
+					<div class="row row_application">
+						<div class="col-md-5">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" checked="checked" />
+									<span>Выдача сертификата о прохождении повышения квалификации <strong>6000 рублей</strong></span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="title-main title-main_application">Добавить документы</div>
+					<div class="row">
+						<div class="col-md-10">
+							<div class="row row_application row_docs">
+								<div class="col-md-4">
+									<div class="upload-main">
+										<div class="upload-main__title">СНИЛС</div>
+										<div class="preview-container">
+											<input type="file" class="file-input" accept="image/png, image/gif, image/jpeg">
+											<div class="preview-container__button"></div>
+											<div class="preview-container__title">Добавить изображение</div>
+											<div class="preview-container__descr">JPG, JPEG, PNG</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="upload-main uploaded">
+										<div class="upload-main__title">Документ о средне-специальном или высшем образовании</div>
+										<div class="preview-container">
+											<input type="file" class="file-input" accept="image/png, image/gif, image/jpeg">
+											<div class="preview-container__button"></div>
+											<div class="preview-container__title">Добавить изображение</div>
+											<div class="preview-container__descr">JPG, JPEG, PNG</div>
+											<div class="preview-container__image">
+												<img src="img/uploaded_doc1.jpg" alt="alt">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="title-main title-main_application">Забронировать отель<span>*</span></div>
+					<div class="wrap-radios">
+						<div class="radio">
+							<label>
+								<input type="radio" name="radio1"/>
+								<span>Отель не требуется</span>
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="radio1" checked="checked"/>
+								<span>Забронировать отель</span>
+							</label>
+						</div>
+					</div>
+					<div class="row row_application">
+						<div class="col-md-6">
+							<div class="item-form">
+								<input type="text" placeholder="Наименование организации" required="required">
+							</div>
+							<div class="item-form">
+								<input type="text" placeholder="Номер телефона органиции (ответственного лица)" class="input-phone" required="required">
+							</div>
+							<div class="item-form">
+								<input type="text" placeholder="Адрес организации" required="required">
+							</div>
+							<div class="item-form">
+								<input type="text" placeholder="Юридический адрес" required="required">
+							</div>
+							<div class="item-form">
+								<input type="text" placeholder="ОГРН" required="required">
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="item-form">
+										<input type="text" placeholder="ИНН" required="required">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="item-form">
+										<input type="text" placeholder="КПП" required="required">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="item-form">
+										<input type="text" placeholder="Р/с №" required="required">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="item-form">
+										<input type="text" placeholder="К/с №" required="required">
+									</div>
+								</div>
+							</div>
+							<div class="item-form">
+								<input type="text" placeholder="Наименование банка" required="required">
+							</div>
+							<div class="item-form">
+								<input type="text" placeholder="БИК" required="required">
+							</div>
+							<input type="submit" class="btn-main" value="Подать заявку на участие">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" required="required" checked="checked" />
+									<span>Я соглашаюсь с <a href="#">политикой конфиденциальности</a></span>
+								</label>
+							</div>
+							<div class="descr-min"><span>*</span>Завтрак включен. Время заселения - 14:00. Расчетный час - 12:00. Оплатупо безналичному расчету гарантируем.</div>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="quantity">
+										<div class="quantity-button quantity-down">–</div>
+										<div class="quantity__input">
+											<div class="quantity__placeholder">Кол-во номеров</div>
+											<input type="number" min="0" step="1" value="0">
+										</div>
+										<div class="quantity-button quantity-up">+</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="quantity">
+										<div class="quantity-button quantity-down">–</div>
+										<div class="quantity__input">
+											<div class="quantity__placeholder">Кол-во человек</div>
+											<input type="number" min="0" step="1" value="0">
+										</div>
+										<div class="quantity-button quantity-up">+</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-form">
+								<input type="text" placeholder="Ф.И.О. участника" required="required">
+							</div>
+							<div class="row" id="time-picker">
+								<div class="col-6">
+									<div class="item-form item-form_date">
+										<div class="item-form__icon">
+											<img src="img/input_date.svg" alt="alt">
+										</div>
+										<input type="text" name="range-start" placeholder="Дата заезда">
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="item-form item-form_date">
+										<div class="item-form__icon">
+											<img src="img/input_date.svg" alt="alt">
+										</div>
+										<input type="text" name="range-end" placeholder="Дата выезда">
+									</div>
+								</div>
+							</div>
+							<div class="item-form">
+								<select>
+									<option value="1">Категория номера</option>
+									<option value="2">Категория номера 1</option>
+									<option value="3">Категория номера 2</option>
+									<option value="4">Категория номера 3</option>
+								</select>
+							</div>
+							<div class="item-form">
+								<input type="text" placeholder="Комментарий" required="required">
+							</div>
+							<button class="btn-page">Добавить проживающего</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<section class="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="about__logo">
+							<img src="img/logo_about.svg" alt="alt">
+						</div>
+					</div>
+					<div class="col-md-9">
+						<div class="about__text">
+							<p><strong>Научно-исследовательская конференция,</strong> организуемая с целью обсуждения и анализа актуальных вопросов и проблем в области технологического развития предприятий по производству керамических стеновых материалов, собрала на своей площадке специалистов из различных стран мира. Данное мероприятие обещает быть плодотворным и внести значительный вклад в индустрию строительных материалов. Первый день конференции начался с пленарного заседания, на котором ведущие специалисты отрасли представили свои доклады. Особое внимание было уделено вопросам энергоэффективности и экологичности производства <a href="#">керамических стеновых изделий</a>, <strong>а также возможностям применения новых технологий и инноваций в этой сфере.</strong></p>
+							<p>В рамках конференции были проведены секционные заседания, посвященные различным аспектам технологического развития керамического производства. Эксперты обсудили вопросы автоматизации и роботизации производственных процессов, новые подходы к управлению качеством продукции и минимизации производственных издержек.</p>
+							<p>Участники конференции также смогли посетить специализированные мастер-классы и тренинги, проводимые ведущими специалистами отрасли. На них были рассмотрены актуальные вопросы, связанные с проектированием и строительством керамических предприятий, а также с разработкой и внедрением новых технологических процессов. Подводя итоги конференции, участники выразили уверенность в том, что проведение таких мероприятий способствует развитию международного сотрудничества и обмену опытом между специалистами различных стран.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<a href="#" class="footer__logo">
+							<img src="img/logo_footer.svg" alt="alt">
+						</a>
+					</div>
+					<div class="col-md-5">
+						<ul class="footer__nav">
+							<li><a href="#">Програма</a></li>
+							<li><a href="#">Партнеры</a></li>
+							<li><a href="#">Архив</a></li>
+							<li><a href="#">Спикеры</a></li>
+							<li><a href="#">О коференции</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<div class="footer__contacts">
+							<a href="tel:+73822500602" class="phone-main"><img src="img/tel.svg" alt="alt">+7 (3822) 500-602</a>
+							<a href="mailto:6105868@gmail.com" class="mail-main">6105868@gmail.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
+	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+	<script src="libs/mask/jquery.maskedinput.js"></script>
+	<script src="libs/vanillajs-datepicker-master/dist/js/datepicker-full.min.js"></script>
+	<script src="libs/vanillajs-datepicker-master/dist/js/locales/ru.js"></script>
+	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+	<script src="js/common.js?ver=1.4"></script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
