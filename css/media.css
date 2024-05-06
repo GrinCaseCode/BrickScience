@@ -406,7 +406,7 @@
     }
     .item-form .jq-selectbox__select-text, .item-form input, .item-form textarea {
         height: 50px;
-        font-size: 14px;
+        font-size: 13px;
         border-radius: 6px;
         padding: 0 15px;
     }
@@ -512,7 +512,7 @@
         padding: 10px 15px;
     }
     .jq-selectbox__dropdown {
-        font-size: 14px;
+        font-size: 13px;
         border-radius: 6px;
         max-height: 300px;
     }
