@@ -517,6 +517,10 @@
         border-radius: 6px;
         max-height: 300px;
     }
+    .col_order {
+        order: -1;
+        padding-bottom: 17px !important;
+    }
 }
 
 
