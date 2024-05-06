@@ -446,6 +446,7 @@
         height: 300px;
         border-radius: 16px;
     }
+    .preview-container__image::after,
     .preview-container__image img,
     .preview-container__image {
         border-radius: 16px;
