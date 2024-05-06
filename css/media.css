@@ -503,6 +503,19 @@
         padding-top: 30px;
         padding-bottom: 40px;
     }
+    .item-form .jq-selectbox__trigger {
+        width: 13px;
+        height: 13px;
+        right: 15px;
+    }
+    .jq-selectbox__dropdown li {
+        padding: 10px 15px;
+    }
+    .jq-selectbox__dropdown {
+        font-size: 14px;
+        border-radius: 6px;
+        max-height: 300px;
+    }
 }
 
 
